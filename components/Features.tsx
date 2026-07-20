@@ -89,7 +89,7 @@ export default function Features() {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.5, ease: "easeOut" },
+      transition: { duration: 0.5, ease: "easeOut" as const },
     },
   };
 
@@ -119,7 +119,7 @@ export default function Features() {
             <motion.div
               key={idx}
               variants={cardVariants}
-              whileHover={{ y: -5, shadow: "0 20px 25px -5px rgb(0 0 0 / 0.05), 0 8px 10px -6px rgb(0 0 0 / 0.05)" }}
+              whileHover={{ y: -5, boxShadow: "0 20px 25px -5px rgb(0 0 0 / 0.05), 0 8px 10px -6px rgb(0 0 0 / 0.05)" }}
               className="p-8 md:p-10 rounded-2xl border border-slate-100 bg-white shadow-[0_2px_8px_-3px_rgba(0,0,0,0.02)] transition-all duration-300 flex flex-col items-start"
             >
               {/* Icon Container */}

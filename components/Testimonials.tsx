@@ -45,7 +45,7 @@ export default function Testimonials() {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.5, ease: "easeOut" },
+      transition: { duration: 0.5, ease: "easeOut" as const },
     },
   };
 
@@ -75,7 +75,7 @@ export default function Testimonials() {
             <motion.div
               key={idx}
               variants={cardVariants}
-              whileHover={{ y: -4, shadow: "0 20px 25px -5px rgb(0 0 0 / 0.02)" }}
+              whileHover={{ y: -4, boxShadow: "0 20px 25px -5px rgb(0 0 0 / 0.02)" }}
               className="p-8 md:p-10 rounded-2xl border border-slate-100 bg-white shadow-[0_2px_8px_-3px_rgba(0,0,0,0.01)] transition-all duration-300 flex flex-col justify-between"
             >
               {/* Top Section */}

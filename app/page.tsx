@@ -148,7 +148,7 @@ export default function Home() {
 
           {/* Links */}
           <div className="flex flex-wrap justify-center gap-x-6 gap-y-2">
-            {["Privacy Policy", "Terms of Service", "Support", "Documentation"].map((link, idx) => {
+            {["Privacy Policy", "Terms of Service", "Documentation"].map((link, idx) => {
               const isPage = link === "Privacy Policy" || link === "Terms of Service";
               const href = isPage
                 ? `/${link.toLowerCase().replace(/ /g, "-")}`

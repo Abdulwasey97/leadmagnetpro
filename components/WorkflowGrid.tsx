@@ -25,7 +25,7 @@ export default function WorkflowGrid() {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.5, ease: "easeOut" },
+      transition: { duration: 0.5, ease: "easeOut" as const },
     },
   };
 
@@ -52,7 +52,7 @@ export default function WorkflowGrid() {
           {/* Column 1: Discover Leads (Tall Card) */}
           <motion.div
             variants={cardVariants}
-            whileHover={{ y: -4, shadow: "0 20px 25px -5px rgb(0 0 0 / 0.03)" }}
+            whileHover={{ y: -4, boxShadow: "0 20px 25px -5px rgb(0 0 0 / 0.03)" }}
             className="rounded-2xl border border-slate-100 bg-white p-8 flex flex-col justify-between shadow-[0_2px_8px_-3px_rgba(0,0,0,0.02)] overflow-hidden lg:h-[640px] transition-all duration-300"
           >
             <div>
@@ -113,7 +113,7 @@ export default function WorkflowGrid() {
             {/* Enrich Contacts Card */}
             <motion.div
               variants={cardVariants}
-              whileHover={{ y: -4, shadow: "0 20px 25px -5px rgb(0 0 0 / 0.03)" }}
+              whileHover={{ y: -4, boxShadow: "0 20px 25px -5px rgb(0 0 0 / 0.03)" }}
               className="rounded-2xl border border-slate-100 bg-white p-8 shadow-[0_2px_8px_-3px_rgba(0,0,0,0.02)] transition-all duration-300 relative overflow-hidden lg:h-[220px] flex flex-col justify-between"
             >
               <div className="flex justify-between items-start">
@@ -151,7 +151,7 @@ export default function WorkflowGrid() {
               {/* Smart Filtering Card */}
               <motion.div
                 variants={cardVariants}
-                whileHover={{ y: -4, shadow: "0 20px 25px -5px rgb(0 0 0 / 0.03)" }}
+                whileHover={{ y: -4, boxShadow: "0 20px 25px -5px rgb(0 0 0 / 0.03)" }}
                 className="rounded-2xl border border-slate-100 bg-white p-6 shadow-[0_2px_8px_-3px_rgba(0,0,0,0.02)] flex flex-col justify-between transition-all duration-300 lg:h-[396px]"
               >
                 <div>
@@ -190,7 +190,7 @@ export default function WorkflowGrid() {
               {/* Bulk Export Card */}
               <motion.div
                 variants={cardVariants}
-                whileHover={{ y: -4, shadow: "0 20px 25px -5px rgb(0 0 0 / 0.03)" }}
+                whileHover={{ y: -4, boxShadow: "0 20px 25px -5px rgb(0 0 0 / 0.03)" }}
                 className="rounded-2xl border border-slate-100 bg-white p-6 shadow-[0_2px_8px_-3px_rgba(0,0,0,0.02)] flex flex-col justify-between transition-all duration-300 lg:h-[396px]"
               >
                 <div>
@@ -243,7 +243,7 @@ export default function WorkflowGrid() {
             {/* Push to CRM (Solid Electric Blue Card) */}
             <motion.div
               variants={cardVariants}
-              whileHover={{ y: -4, shadow: "0 20px 25px -5px rgba(0, 86, 214, 0.15)" }}
+              whileHover={{ y: -4, boxShadow: "0 20px 25px -5px rgba(0, 86, 214, 0.15)" }}
               className="rounded-2xl bg-brand-blue p-8 text-white flex flex-col justify-between shadow-[0_4px_20px_-4px_rgba(0,86,214,0.3)] transition-all duration-300 lg:h-[220px]"
             >
               <div className="flex justify-between items-start">
@@ -270,7 +270,7 @@ export default function WorkflowGrid() {
             {/* Dedupe & Track Card */}
             <motion.div
               variants={cardVariants}
-              whileHover={{ y: -4, shadow: "0 20px 25px -5px rgb(0 0 0 / 0.03)" }}
+              whileHover={{ y: -4, boxShadow: "0 20px 25px -5px rgb(0 0 0 / 0.03)" }}
               className="rounded-2xl border border-slate-100 bg-white p-8 shadow-[0_2px_8px_-3px_rgba(0,0,0,0.02)] flex flex-col justify-between transition-all duration-300 lg:h-[396px]"
             >
               <div>

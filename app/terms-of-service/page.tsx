@@ -23,7 +23,7 @@ export default function TermsOfService() {
       <main className="flex-grow py-16 md:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-12">
-            
+
             {/* Sticky Sidebar Navigation */}
             <aside className="lg:col-span-1 hidden lg:block">
               <div className="sticky top-28 flex flex-col gap-3.5 border-l border-slate-100 pl-4 py-2">
@@ -48,7 +48,7 @@ export default function TermsOfService() {
               <p className="text-slate-500 text-sm mb-12">Last Updated: July 20, 2026</p>
 
               <div className="space-y-12 text-slate-600 text-[15px] leading-relaxed">
-                
+
                 <section id="acceptance" className="scroll-mt-24">
                   <h2 className="text-2xl font-bold text-brand-dark mb-4">1. Acceptance of Terms</h2>
                   <p className="mb-4">
@@ -135,7 +135,7 @@ export default function TermsOfService() {
           </a>
 
           <div className="flex flex-wrap justify-center gap-x-6 gap-y-2">
-            {["Privacy Policy", "Terms of Service", "Support", "Documentation"].map((link, idx) => {
+            {["Privacy Policy", "Terms of Service", "Documentation"].map((link, idx) => {
               const isPage = link === "Privacy Policy" || link === "Terms of Service";
               const href = isPage
                 ? `/${link.toLowerCase().replace(/ /g, "-")}`
