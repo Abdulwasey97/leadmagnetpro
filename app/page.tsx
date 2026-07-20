@@ -71,9 +71,8 @@ export default function Home() {
                   >
                     <span className="text-[15px] md:text-base">{faq.question}</span>
                     <svg
-                      className={`w-4 h-4 text-brand-muted transition-transform duration-350 ${
-                        isOpen ? "rotate-180 text-brand-blue" : ""
-                      }`}
+                      className={`w-4 h-4 text-brand-muted transition-transform duration-350 ${isOpen ? "rotate-180 text-brand-blue" : ""
+                        }`}
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -129,7 +128,7 @@ export default function Home() {
               <p className="mt-4 text-white/90 text-sm md:text-base leading-relaxed max-w-md">
                 Join 5,000+ sales professionals using LeadMagnet Pro to automate their growth.
               </p>
-              
+
               <button className="mt-8 px-8 py-3.5 rounded-xl bg-white hover:bg-slate-50 text-brand-blue font-bold text-[15px] shadow-md hover:shadow-lg transition-all duration-200 hover:-translate-y-0.5 focus:outline-none">
                 Start Your Free Trial
               </button>
@@ -167,7 +166,7 @@ export default function Home() {
 
           {/* Copyright */}
           <p className="text-[11px] text-slate-500 text-center md:text-right">
-            &copy; 2024 LeadMagnet Pro. All rights reserved. Powered by Zoho CRM Integration.
+            &copy; 2026 LeadMagnet Pro. All rights reserved. Powered by Zoho CRM Integration.
           </p>
         </div>
       </footer>

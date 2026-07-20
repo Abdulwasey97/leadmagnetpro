@@ -166,7 +166,7 @@ export default function PrivacyPolicy() {
           </div>
 
           <p className="text-[11px] text-slate-500 text-center md:text-right">
-            &copy; 2024 LeadMagnet Pro. All rights reserved. Powered by Zoho CRM Integration.
+            &copy; 2026 LeadMagnet Pro. All rights reserved. Powered by Zoho CRM Integration.
           </p>
         </div>
       </footer>
