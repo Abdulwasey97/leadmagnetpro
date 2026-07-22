@@ -139,7 +139,7 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="bg-white border-t border-slate-100/80 py-8 mt-auto">
-        <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+        <div className="w-full max-w-[80%] mx-auto px-4 md:px-6 flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Logo Brand */}
           <a href="#" className="flex items-center gap-2.5">
             <Image src="/leadmagnet_pro_logo_trimmed.png" alt="LeadMagnet Pro Logo" width={113} height={28} />

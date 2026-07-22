@@ -39,29 +39,29 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative overflow-hidden pt-12 pb-24 md:py-32 bg-[#fafcff]">
+    <section className="relative overflow-hidden min-h-[calc(100vh-5rem)] flex items-center py-8 md:py-12 bg-[#fafcff]">
       {/* Background glow effects */}
-      <div className="absolute top-1/4 right-0 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-tr from-brand-blue/10 to-cyan-400/5 rounded-full blur-[130px] pointer-events-none -z-10" />
-      <div className="absolute top-1/3 left-10 w-[400px] h-[400px] bg-gradient-to-tr from-indigo-400/5 to-brand-blue/10 rounded-full blur-[100px] pointer-events-none -z-10" />
+      <div className="absolute top-1/4 right-0 -translate-y-1/2 w-[500px] h-[500px] bg-gradient-to-tr from-brand-blue/10 to-cyan-400/5 rounded-full blur-[130px] pointer-events-none -z-10" />
+      <div className="absolute top-1/3 left-10 w-[350px] h-[350px] bg-gradient-to-tr from-indigo-400/5 to-brand-blue/10 rounded-full blur-[100px] pointer-events-none -z-10" />
 
-      <div className="w-full px-6 md:px-12 lg:px-16">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+      <div className="w-full max-w-[80%] mx-auto px-4 md:px-6">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           
           {/* Left Column - Content */}
           <motion.div
             variants={containerVariants}
             initial="hidden"
             animate="visible"
-            className="lg:col-span-5 flex flex-col items-start text-left"
+            className="lg:col-span-6 flex flex-col items-start text-left"
           >
             {/* CRM Workflow Badge */}
             <motion.div
               variants={itemVariants}
-              className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-light-blue border border-brand-blue/10 shadow-sm shadow-brand-blue/5 mb-6"
+              className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-light-blue border border-brand-blue/10 shadow-sm shadow-brand-blue/5 mb-4"
             >
               {/* Lightning Icon */}
               <svg
-                className="w-3.5 h-3.5 text-brand-blue fill-brand-blue"
+                className="w-3 h-3 text-brand-blue fill-brand-blue"
                 viewBox="0 0 24 24"
               >
                 <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
@@ -73,7 +73,7 @@ export default function Hero() {
 
             <motion.h1
               variants={itemVariants}
-              className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-brand-dark leading-[1.12]"
+              className="text-3xl sm:text-4xl lg:text-[44px] font-bold tracking-tight text-brand-dark leading-[1.15]"
             >
               See Every Lead <br className="hidden md:inline" />
               Before They{" "}
@@ -85,7 +85,7 @@ export default function Hero() {
             {/* Description */}
             <motion.p
               variants={itemVariants}
-              className="mt-6 text-base md:text-[17px] leading-relaxed text-brand-muted max-w-xl font-normal"
+              className="mt-4 text-sm md:text-base leading-relaxed text-brand-muted max-w-lg font-normal"
             >
               LeadMagnet Pro is an extension for Zoho CRM that helps users
               discover, enrich, and push leads from Google, Facebook, and
@@ -96,7 +96,7 @@ export default function Hero() {
 
             <motion.p
               variants={itemVariants}
-              className="mt-4 text-base md:text-[17px] leading-relaxed text-brand-muted max-w-xl font-normal"
+              className="mt-3 text-sm md:text-base leading-relaxed text-brand-muted max-w-lg font-normal"
             >
               LeadMagnet Pro empowers your sales team to stop searching and start
               connecting, giving you a radar view of every high-value prospect
@@ -107,22 +107,22 @@ export default function Hero() {
             {/* CTA Buttons */}
             <motion.div
               variants={itemVariants}
-              className="mt-10 flex flex-col sm:flex-row gap-4 w-full sm:w-auto"
+              className="mt-8 flex flex-col sm:flex-row gap-3.5 w-full sm:w-auto text-sm"
             >
               <a
                 href="#get-started"
-                className="px-8 py-4 rounded-xl bg-brand-blue hover:bg-brand-blue-hover text-white font-semibold text-center shadow-lg shadow-brand-blue/15 hover:shadow-xl hover:shadow-brand-blue/25 transition-all duration-200 hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-brand-blue focus:ring-offset-2"
+                className="px-6 py-3 rounded-xl bg-brand-blue hover:bg-brand-blue-hover text-white font-semibold text-center shadow-md shadow-brand-blue/15 hover:shadow-lg hover:shadow-brand-blue/25 transition-all duration-200 hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-brand-blue focus:ring-offset-2"
               >
                 Get Started Now
               </a>
               <button
                 onClick={() => setShowDemo(true)}
-                className="flex items-center justify-center gap-3 px-8 py-4 rounded-xl border border-brand-blue/15 bg-brand-light-blue/50 hover:bg-brand-light-blue text-brand-blue font-semibold transition-all duration-200 hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-brand-blue focus:ring-offset-2"
+                className="flex items-center justify-center gap-2.5 px-6 py-3 rounded-xl border border-brand-blue/15 bg-brand-light-blue/50 hover:bg-brand-light-blue text-brand-blue font-semibold transition-all duration-200 hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-brand-blue focus:ring-offset-2"
               >
                 {/* Play Button Icon */}
-                <div className="flex items-center justify-center w-6 h-6 rounded-full border-2 border-brand-blue bg-white shadow-sm">
+                <div className="flex items-center justify-center w-5 h-5 rounded-full border-2 border-brand-blue bg-white shadow-sm">
                   <svg
-                    className="w-2.5 h-2.5 fill-brand-blue ml-0.5"
+                    className="w-2 h-2 fill-brand-blue ml-0.5"
                     viewBox="0 0 24 24"
                   >
                     <path d="M8 5v14l11-7z" />
@@ -138,22 +138,22 @@ export default function Hero() {
             variants={imageVariants}
             initial="hidden"
             animate="visible"
-            className="lg:col-span-7 flex justify-center relative w-full lg:self-end lg:-mb-8"
+            className="lg:col-span-6 flex justify-center lg:justify-end relative w-full"
           >
             {/* Premium outer framing/shadow */}
-            <div className="relative w-full max-w-[750px] aspect-square animate-float flex items-center justify-center">
+            <div className="relative w-full max-w-[520px] aspect-[4/3] animate-float flex items-center justify-center">
               <div className="absolute inset-0 rounded-3xl bg-gradient-to-tr from-brand-blue/5 to-cyan-500/10 -z-10 blur-xl opacity-60" />
               
               {/* Main dashboard visual */}
-              <div className="relative w-full h-full rounded-2xl border border-white/80 bg-white/40 backdrop-blur-sm p-3 shadow-2xl shadow-slate-200/50 overflow-hidden group">
+              <div className="relative w-full h-full rounded-2xl border border-white/80 bg-white/40 backdrop-blur-sm p-2.5 shadow-xl shadow-slate-200/50 overflow-hidden group">
                 {/* Visual glare shine effect */}
                 <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/10 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000 ease-out pointer-events-none" />
                 
                 <Image
                   src="/hero_illustration.png"
                   alt="LeadMagnet Pro Integration Diagram"
-                  width={750}
-                  height={750}
+                  width={600}
+                  height={450}
                   className="w-full h-full object-cover rounded-xl select-none"
                   priority
                 />

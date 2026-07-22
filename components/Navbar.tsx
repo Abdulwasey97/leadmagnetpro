@@ -74,7 +74,7 @@ export default function Navbar() {
           : "bg-transparent border-b border-transparent"
       }`}
     >
-      <div className="w-full px-6 md:px-12 lg:px-16 h-20 flex items-center justify-between">
+      <div className="w-full max-w-[80%] mx-auto px-4 md:px-6 h-20 flex items-center justify-between">
         {/* Logo Section */}
         <a href="/" className="flex items-center gap-3 group">
           <Image src="/leadmagnet_pro_logo_trimmed.png" alt="LeadMagnet Pro Logo" width={145} height={36} priority />

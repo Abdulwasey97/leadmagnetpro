@@ -51,7 +51,7 @@ export default function Testimonials() {
 
   return (
     <section id="testimonials" className="py-20 md:py-28 bg-[#fafcff] border-t border-slate-100">
-      <div className="w-full px-6 md:px-12 lg:px-16">
+      <div className="w-full max-w-[80%] mx-auto px-4 md:px-6">
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 md:mb-20">

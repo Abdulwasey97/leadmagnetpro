@@ -31,7 +31,7 @@ export default function WorkflowGrid() {
 
   return (
     <section id="workflow" className="py-20 md:py-28 bg-white border-b border-slate-100">
-      <div className="w-full px-6 md:px-12 lg:px-16">
+      <div className="w-full max-w-[80%] mx-auto px-4 md:px-6">
         
         {/* Section Title */}
         <div className="text-center mb-16 md:mb-20">

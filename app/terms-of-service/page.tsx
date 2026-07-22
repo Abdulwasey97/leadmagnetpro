@@ -21,7 +21,7 @@ export default function TermsOfService() {
       <Navbar />
 
       <main className="flex-grow py-16 md:py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
+        <div className="w-full max-w-[80%] mx-auto px-4 md:px-6">
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-12">
 
             {/* Sticky Sidebar Navigation */}
@@ -129,7 +129,7 @@ export default function TermsOfService() {
 
       {/* Footer */}
       <footer className="bg-white border-t border-slate-100/80 py-8">
-        <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+        <div className="w-full max-w-[80%] mx-auto px-4 md:px-6 flex flex-col md:flex-row items-center justify-between gap-6">
           <a href="/" className="flex items-center gap-2.5">
             <Image src="/leadmagnet_pro_logo_trimmed.png" alt="LeadMagnet Pro Logo" width={113} height={28} />
           </a>
